@@ -5,7 +5,19 @@ import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { ExternalLink, Github } from "lucide-react";
 
-const projects = [
+
+interface Project {
+    title: string;
+    description: string;
+    tags: string[];
+    links?: {
+        external?: string;
+        github?: string;
+    };
+    note?: string;
+}
+
+const projects: Project[] = [
     {
         title: "Проект AXIOMA",
         description: "Высоконагруженный проект для компании Росатом, предназначенный для управления и контроля рабочего времени сотрудников, а также учета инструментов: выдача, возврат и другие административные процессы.",
@@ -24,9 +36,8 @@ const projects = [
         tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Kubernetes", "CI/CD", "GO"],
         links: { external: "https://phonifi.ru/" },
     },
-
-
 ];
+
 
 export function Projects() {
     return (
