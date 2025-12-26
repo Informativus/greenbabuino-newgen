@@ -62,7 +62,8 @@ export function Navigation() {
                             </Link>
                         ))}
                         <Link
-                            href="#contact"
+                            href="https://hh.ru/resume/ec9d610dff0d89b7a40039ed1f304875743277"
+                            target="_blank"
                             className="px-4 py-2 bg-foreground text-background text-sm font-medium rounded-md hover:bg-muted transition-colors"
                         >
                             Резюме
