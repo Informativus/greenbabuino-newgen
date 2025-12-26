@@ -3,7 +3,7 @@ name: CI/CD Next.js
 on:
   pull_request:
     branches:
-      - main   # можно изменить на ветку для теста
+      - main
 
 jobs:
   build-and-deploy:
