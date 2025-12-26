@@ -36,7 +36,7 @@ export function About() {
                         <span className="text-sm text-muted">Года опыта разработки</span>
                     </Card>
                     <Card className="flex flex-col justify-between h-40">
-                        <span className="text-4xl font-bold text-accent">10+</span>
+                        <span className="text-4xl font-bold text-accent">7+</span>
                         <span className="text-sm text-muted">Проектов (backend, tools)</span>
                     </Card>
                 </div>
