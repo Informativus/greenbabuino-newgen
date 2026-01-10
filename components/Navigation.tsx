@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import { Container } from "./ui/Container";
 import { cn } from "@/lib/utils";
 
+
 const navLinks = [
     { name: "Обо мне", href: "#about" },
     { name: "Навыки", href: "#skills" },
@@ -39,11 +40,12 @@ export function Navigation() {
                     <Link href="/" className="flex items-center space-x-3 group">
                         <div className="relative w-10 h-10 group-hover:scale-110 transition-transform duration-300">
                             <Image
-                                src="/greenbabuino-logo.svg"
+                                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/greenbabuino-logo.svg`}
                                 alt="Greenbabuino Logo"
                                 fill
                                 className="object-contain"
                             />
+
                         </div>
                         <span className="text-xl font-bold tracking-tight text-foreground">
                             Greenbabuino
